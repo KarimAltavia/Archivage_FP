@@ -1,5 +1,15 @@
 #!/bin/bash
 
+#Ce script Bash est conçu pour automatiser la sauvegarde de données pour un client 
+#spécifique. L'utilisateur est invité à saisir le nom du client, puis le script 
+#vérifie l'existence des dossiers source et cible, gère un fichier journal 
+#pour enregistrer les opérations, vérifie les autorisations d'accès, 
+#déplace le contenu du dossier cible vers le dossier source 
+#et copie le contenu du dossier source vers un dossier d'archives. 
+#Il effectue ces opérations tout en journalisant chaque étape pour un suivi complet 
+#des actions effectuées.
+
+
 # Demander le nom du client à sauvegarder
 read -p "Quel client souhaitez-vous sauvegarder ? " client_name
 
